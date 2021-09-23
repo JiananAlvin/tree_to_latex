@@ -48,8 +48,8 @@ class Tree:
     """ A tree is rappresented by a string, with this code:
         a 
        /c \
-      /		\
-    b		d 
+      /	    \
+     b		 d 
     ;0;a;(c;1;b;())(;2;d;())
     """
 
@@ -125,6 +125,7 @@ class Tree:
                "double": "\leftrightarrow", "or": " \\vee", "and": " \wedge ",
                "not": "\\neg", "sblue": "\\textcolor{blue}{", "eblue": "}",
                "sred": "\\textcolor{red}{", "ered": "}", "space": "\ ",
+               "smag": "\\textcolor{magenta}{", "emag": "}", "space": "\ ",
                "largeSpace": "\quad", "$$": " "}
         for i in dic:
             result = result.replace(i, dic.get(i))
