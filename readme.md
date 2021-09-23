@@ -68,15 +68,19 @@ My folder looks like this:
 
 ![image-20210923042034398](https://raw.githubusercontent.com/gggdttt/ImageBeds/master/img/202109230420476.png)
 
-In folder `example`, there is a `txt` file which is used to describe a tree.
+In folder `example`, there is a `txt` file which is used to describe a tree. Its content is mentioned above:
 
-So I would try the command following:
+```txt
+1.(p toRight r) and (q toRight not r):T largeSpace 2.(p toLeft r) or (q double not r):F
+;3.p toRight r:T | sblue not  T space on space 1 eblue;4.q toRight p:T
+@ ;sred 5. p toRight r :T ered| not  T space on space 1;6.q toRight p:T
+```
+
+Then I would try the command following:
 
 ```bas
 {Python_path} .\treepy.py {tree_description_file}
 ```
-
-
 
 ![image-20210923041905791](https://raw.githubusercontent.com/gggdttt/ImageBeds/master/img/202109230419856.png)
 
