@@ -1,0 +1,13 @@
+\node[punkt] {$1.(p \rightarrow r)  \wedge  (q \rightarrow \neg r):T \quad 2.(p \leftarrow r)  \vee (q \leftrightarrow \neg r):F$}
+	child {node[punkt] {$3.p \rightarrow r:T$}
+edge from parent
+ node[kant,above,pos=.4]{ }}
+	child {node[punkt] {$4.q \rightarrow p:T$}
+	child {node[punkt] {$\textcolor{red}{ 5. p \rightarrow r :T }$}
+edge from parent
+ node[kant,above,pos=.4]{ }}
+	child {node[punkt] {$6.q \rightarrow p:T$}
+edge from parent
+ node[kant,above,pos=.4]{$\neg  T \  on \  1$}}
+edge from parent
+ node[kant,above,pos=.4]{$\textcolor{blue}{ \neg  T \  on \  1 }$}};
