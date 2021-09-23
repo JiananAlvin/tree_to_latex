@@ -112,7 +112,7 @@ class Tree:
             lab = lab.strip()
             if count % 2 == 0:
                 rev = lab  # [::-1]
-                tex += "edge from parent\n node[kant,above,pos=.4]{$" + rev + "$}}"
+                tex += "edge from parent\n node[kant,right,pos=.4]{$" + rev + "$}}"
         # else:
         #	lab = lab.replace("$","\$")
         #	tex+= "edge from parent\n node[kant,below,pos=.4]{\\texttt{"+lab+"}}}"
@@ -124,13 +124,8 @@ class Tree:
         dic = {"toRight": "\\rightarrow", "toLeft": "\leftarrow",
                "double": "\leftrightarrow", "or": " \\vee", "and": " \wedge ",
                "not": "\\neg", "sblue": "\\textcolor{blue}{", "eblue": "}",
-<<<<<<< HEAD
-               "sred": "\\textcolor{red}{", "ered": "}", "space": "\ ",
-               "smag": "\\textcolor{magenta}{", "emag": "}", "space": "\ ",
-=======
-               "sred": "\\textcolor{red}{", "ered": "}", "space": "\ ", "nextLine": "$\\\\$",
->>>>>>> be0b6b18b3aa269a5d62123465f1b36bf4499560
-               "largeSpace": "\quad", "$$": " "}
+               "sred": "\\textcolor{red}{", "ered": "}",
+               "smag": "\\textcolor{magenta}{", "emag": "}", "space": "\ "}
         for i in dic:
             result = result.replace(i, dic.get(i))
             # print("replace  " + i)
