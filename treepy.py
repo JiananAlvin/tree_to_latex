@@ -122,9 +122,9 @@ class Tree:
     def replace(self, str):
         result = str
         dic = {"toRight": "\\rightarrow", "toLeft": "\leftarrow",
-               "double": "\leftrightarrow", "or": " \\vee", "and": " \wedge ",
+               "double": "\leftrightarrow", "or": "\\vee", "and": "\\wedge ",
                "not": "\\neg", "sblue": "\\textcolor{blue}{", "eblue": "}",
-               "sred": "\\textcolor{red}{", "ered": "}",
+               "sred": "\\textcolor{red}{", "ered": "}", "cross": "\\times", "circle": "\\bigcirc",
                "smag": "\\textcolor{magenta}{", "emag": "}", "space": "\ "}
         for i in dic:
             result = result.replace(i, dic.get(i))
