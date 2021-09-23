@@ -1,0 +1,19 @@
+\node[punkt] {$1 \  p \rightarrow ((q \rightarrow r) \rightarrow ((p \rightarrow q) \rightarrow (p \rightarrow r))) : F$}
+	child {node[punkt] {$2 \  p : T $\\$ 3 \  (q \rightarrow r) \rightarrow ((p \rightarrow q) \rightarrow (p \rightarrow r)) : F$}
+	child {node[punkt] {$4 \  q \rightarrow r : T $\\$ 5 \  (p \rightarrow q) \rightarrow (p \rightarrow r) : F$}
+	child {node[punkt] {$6 \  p \rightarrow q : T $\\$ 7 \  p \rightarrow r : F$}
+	child {node[punkt] {$8 \  p : T $\\$ 9 \  r : F$}
+	child {node[punkt] {$10 \  p : F $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{ }}
+	child {node[punkt] {$11 \  q : T $\\$ \bigcirc$}
+edge from parent
+ node[kant,right,pos=.4]{$\rightarrow T \  on \  6$}}
+edge from parent
+ node[kant,right,pos=.4]{$\rightarrow F \  on \  7$}}
+edge from parent
+ node[kant,right,pos=.4]{$\rightarrow F \  on \  5$}}
+edge from parent
+ node[kant,right,pos=.4]{$\rightarrow F \  on \  3$}}
+edge from parent
+ node[kant,right,pos=.4]{$\rightarrow F \  on \  1$}};

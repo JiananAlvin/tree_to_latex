@@ -1,0 +1,13 @@
+\node[punkt] {$1 \  (b \rightarrow c) \wedge  (r \leftrightarrow q) \wedge  (\neg q \wedge  \neg b) \rightarrow (q \rightarrow (r \wedge  c)) : F$}
+	child {node[punkt] {$2 \  b \rightarrow c : T $\\$ 3 \  r \leftrightarrow q : T $\\$ 4 \  \neg q \wedge  \neg b : T $\\$ 5 \  q \rightarrow (r \wedge  c) : F$}
+	child {node[punkt] {$6 \  q : T $\\$ 7 \  r \wedge  c : F$}
+	child {node[punkt] {$8 \  \neg q : T $\\$ 9 \  \neg b : T$}
+	child {node[punkt] {$10 \  q : F $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{$\neg T \  on \  8$}}
+edge from parent
+ node[kant,right,pos=.4]{$\wedge  T \  on \  4$}}
+edge from parent
+ node[kant,right,pos=.4]{$\rightarrow F \  on \  5$}}
+edge from parent
+ node[kant,right,pos=.4]{$\rightarrow F \  on \  1$}};

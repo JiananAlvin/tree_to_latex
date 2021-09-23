@@ -92,8 +92,8 @@ class Tree:
                         try:
                             (edge_label, node_label) = d.split(";")
                         except:
-                            print >> sys.stderr, "Error: reading line " + str(j) + " elem " + d + "(" + str(
-                                len(d.strip())) + ")"
+                            print ( sys.stderr, "Error: reading line " + str(j) + " elem " + d + "(" + str(
+                                len(d.strip())) + ")")
                             sys.exit()
                         node_ids[j].append(self.addNode(s, edge_label.strip(), node_label.strip()))
                     count += 1
@@ -125,7 +125,7 @@ class Tree:
                "double": "\leftrightarrow", "or": "\\vee", "and": "\\wedge ",
                "not": "\\neg", "sblue": "\\textcolor{blue}{", "eblue": "}",
                "sred": "\\textcolor{red}{", "ered": "}", "cross": "\\times", "circle": "\\bigcirc",
-               "smag": "\\textcolor{magenta}{", "emag": "}", "space": "\ "}
+               "smag": "\\textcolor{magenta}{", "emag": "}", "space": "\ ", "nextLine": "$\\\\$", "$$": " "}
         for i in dic:
             result = result.replace(i, dic.get(i))
             # print("replace  " + i)

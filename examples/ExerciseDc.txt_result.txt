@@ -1,0 +1,19 @@
+\node[punkt] {$1 \  A \wedge  (A \vee B) \leftrightarrow A$}
+	child {node[punkt] {$2 \  A \wedge  (A \vee B) : T $\\$ 3 \  A : F$}
+	child {node[punkt] {$6 \  A : T $\\$ 7 \  A \vee B : T $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{$\wedge  T \  on \  2$}}
+edge from parent
+ node[kant,right,pos=.4]{ }}
+	child {node[punkt] {$4 \  A \wedge  (A V B) : F $\\$ 5 \  A : T$}
+	child {node[punkt] {$8 \  A : F $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{ }}
+	child {node[punkt] {$9 \  A \vee B : F$}
+	child {node[punkt] {$10 \  A : F $\\$ 11 \  B : F $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{$\vee F \  on \  9$}}
+edge from parent
+ node[kant,right,pos=.4]{$\wedge  F \  on \  4$}}
+edge from parent
+ node[kant,right,pos=.4]{$\leftrightarrow F \  on \  1$}};

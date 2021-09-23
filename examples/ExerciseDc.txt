@@ -1,0 +1,6 @@
+1 space A and (A or B) double A
+; 2 space A and (A or B) : T nextLine 3 space A : F | double F space on space 1 ; 4 space A and (A V B) : F nextLine 5 space A : T
+and T space on space 2 ; 6 space A : T nextLine 7 space A or B : T nextLine cross @ ; 8 space A : F nextLine cross | and F space on space 4 ; 9 space A or B : F
+@ @ or F space on space 9 ; 10 space A : F nextLine 11 space B : F nextLine cross
+
+

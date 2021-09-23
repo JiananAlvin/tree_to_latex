@@ -1,0 +1,25 @@
+\node[punkt] {$1 \  ((p \rightarrow r) \vee (q \rightarrow r)) \rightarrow ((p \vee q) \rightarrow r) : F$}
+	child {node[punkt] {$2 \  (p \rightarrow r) \vee (q \rightarrow r) : T $\\$ 3 \  (p \vee q) \rightarrow r : F$}
+	child {node[punkt] {$4 \  p \rightarrow r : T$}
+	child {node[punkt] {$6 \  p:F$}
+	child {node[punkt] {$8 \  p \vee q : T $\\$ 9 \  r :F$}
+	child {node[punkt] {$10 \  p : T $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{ }}
+	child {node[punkt] {$11 \  q : T $\\$ \bigcirc$}
+edge from parent
+ node[kant,right,pos=.4]{$\vee T \  on \  8$}}
+edge from parent
+ node[kant,right,pos=.4]{$\rightarrow F \  on \  3$}}
+edge from parent
+ node[kant,right,pos=.4]{ }}
+	child {node[punkt] {$7 \  r : T$}
+edge from parent
+ node[kant,right,pos=.4]{$\rightarrow T \  on \  4$}}
+edge from parent
+ node[kant,right,pos=.4]{ }}
+	child {node[punkt] {$5 \  q \rightarrow r : T$}
+edge from parent
+ node[kant,right,pos=.4]{$\vee T \  on \  2$}}
+edge from parent
+ node[kant,right,pos=.4]{$\rightarrow F \  on \  1$}};

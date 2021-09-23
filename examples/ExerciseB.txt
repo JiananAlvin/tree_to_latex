@@ -1,0 +1,5 @@
+1 space (b toRight c) and (r double q) and (not q and not b) toRight (q toRight (r and c)) : F
+toRight F space on space 1 ; 2 space b toRight c : T nextLine 3 space r double q : T nextLine 4 space not q and not b : T nextLine 5 space q toRight (r and c) : F
+toRight F space on space 5 ; 6 space q : T nextLine 7 space r and c : F
+and T space on space 4 ; 8 space not q : T nextLine 9 space not b : T
+not T space on space 8; 10 space q : F nextLine cross
