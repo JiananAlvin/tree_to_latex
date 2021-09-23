@@ -45,7 +45,7 @@ I want to generate some Formula of Discrete Mathematic. There are a lot of speci
                "and": "\wedge ",
                "not": "\\neg", 
                "sblue": "\\textcolor{blue}{", "eblue": "}",
-               "sred": "\\textcolor{red}{", "ered": "}", "space": "\ ",
+               "sred": "\\textcolor{red}{", "ered": "}", "space": "\ ","nextLine":"$\\\\$"
                "largeSpace": "\quad", "$$": " "}
 ```
 
@@ -68,15 +68,19 @@ My folder looks like this:
 
 ![image-20210923042034398](https://raw.githubusercontent.com/gggdttt/ImageBeds/master/img/202109230420476.png)
 
-In folder `example`, there is a `txt` file which is used to describe a tree.
+In folder `example`, there is a `txt` file which is used to describe a tree. Its content is mentioned above:
 
-So I would try the command following:
+```txt
+1.(p toRight r) and (q toRight not r):T largeSpace 2.(p toLeft r) or (q double not r):F
+;3.p toRight r:T | sblue not  T space on space 1 eblue;4.q toRight p:T
+@ ;sred 5. p toRight r :T ered| not  T space on space 1;6.q toRight p:T
+```
+
+Then I would try the command following:
 
 ```bas
 {Python_path} .\treepy.py {tree_description_file}
 ```
-
-
 
 ![image-20210923041905791](https://raw.githubusercontent.com/gggdttt/ImageBeds/master/img/202109230419856.png)
 
@@ -108,23 +112,25 @@ edge from parent
 
 Copy it and paste it to your overleaf in the following way:
 
-	%start from here
-	\begin{tikzpicture}[
-	grow=down,
-	level 1/.style={sibling distance=5cm,level distance=4cm},
-	level 2/.style={sibling distance=4cm, level distance=4cm},
-	level 3/.style={sibling distance=4cm, level distance=4cm},
-	kant/.style={ text centered, sloped},
-	every node/.style={text ragged, inner sep=2mm},
-	punkt/.style={ shade, top color=white,
-	bottom color=white, draw=white, very thick }
-	]
-	
-	%...insert your result here...%
-	
-	\end{tikzpicture}
-	
-	%end here
+```latex
+%start from here
+\begin{tikzpicture}[
+grow=down,
+level 1/.style={sibling distance=5cm,level distance=4cm},
+level 2/.style={sibling distance=4cm, level distance=4cm},
+level 3/.style={sibling distance=4cm, level distance=4cm},
+kant/.style={ text centered, sloped},
+every node/.style={text ragged, inner sep=2mm,align=center},
+punkt/.style={ shade, top color=white,
+bottom color=white, draw=white, very thick }
+]
+
+% Insert generated code here%
+
+\end{tikzpicture}
+
+%end here
+```
 
 The tree is drawn using the [tikz package](http://www.texample.net/tikz/). You will have to import the package *tikz*. As you can see the preamble of tikzpicture allows you to personalize your tree .
 
@@ -134,3 +140,4 @@ The tree is drawn using the [tikz package](http://www.texample.net/tikz/). You w
 > @ Author : WenjieDTU&JiananAlvin
 >
 > Ref: https://github.com/diegoceccarelli/treepy
+

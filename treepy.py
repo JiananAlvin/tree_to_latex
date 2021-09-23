@@ -124,8 +124,12 @@ class Tree:
         dic = {"toRight": "\\rightarrow", "toLeft": "\leftarrow",
                "double": "\leftrightarrow", "or": " \\vee", "and": " \wedge ",
                "not": "\\neg", "sblue": "\\textcolor{blue}{", "eblue": "}",
+<<<<<<< HEAD
                "sred": "\\textcolor{red}{", "ered": "}", "space": "\ ",
                "smag": "\\textcolor{magenta}{", "emag": "}", "space": "\ ",
+=======
+               "sred": "\\textcolor{red}{", "ered": "}", "space": "\ ", "nextLine": "$\\\\$",
+>>>>>>> be0b6b18b3aa269a5d62123465f1b36bf4499560
                "largeSpace": "\quad", "$$": " "}
         for i in dic:
             result = result.replace(i, dic.get(i))
@@ -177,8 +181,7 @@ def main(argv=None):
     t = Tree()
     t.read(sys.argv[1])
 
-
-    with open(sys.argv[1]+"_result.txt", 'w') as f:
+    with open(sys.argv[1] + "_result.txt", 'w') as f:
         print(f.write(t.getTex()))
     # print(t.getTex())
 
