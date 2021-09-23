@@ -45,7 +45,7 @@ I want to generate some Formula of Discrete Mathematic. There are a lot of speci
                "and": "\wedge ",
                "not": "\\neg", 
                "sblue": "\\textcolor{blue}{", "eblue": "}",
-               "sred": "\\textcolor{red}{", "ered": "}", "space": "\ ",
+               "sred": "\\textcolor{red}{", "ered": "}", "space": "\ ","nextLine":"$\\\\$"
                "largeSpace": "\quad", "$$": " "}
 ```
 
@@ -108,23 +108,25 @@ edge from parent
 
 Copy it and paste it to your overleaf in the following way:
 
-	%start from here
-	\begin{tikzpicture}[
-	grow=down,
-	level 1/.style={sibling distance=5cm,level distance=4cm},
-	level 2/.style={sibling distance=4cm, level distance=4cm},
-	level 3/.style={sibling distance=4cm, level distance=4cm},
-	kant/.style={ text centered, sloped},
-	every node/.style={text ragged, inner sep=2mm},
-	punkt/.style={ shade, top color=white,
-	bottom color=white, draw=white, very thick }
-	]
-	
-	%...insert your result here...%
-	
-	\end{tikzpicture}
-	
-	%end here
+```latex
+%start from here
+\begin{tikzpicture}[
+grow=down,
+level 1/.style={sibling distance=5cm,level distance=4cm},
+level 2/.style={sibling distance=4cm, level distance=4cm},
+level 3/.style={sibling distance=4cm, level distance=4cm},
+kant/.style={ text centered, sloped},
+every node/.style={text ragged, inner sep=2mm,align=center},
+punkt/.style={ shade, top color=white,
+bottom color=white, draw=white, very thick }
+]
+
+% Insert generated code here%
+
+\end{tikzpicture}
+
+%end here
+```
 
 The tree is drawn using the [tikz package](http://www.texample.net/tikz/). You will have to import the package *tikz*. As you can see the preamble of tikzpicture allows you to personalize your tree .
 
@@ -134,3 +136,4 @@ The tree is drawn using the [tikz package](http://www.texample.net/tikz/). You w
 > @ Author : WenjieDTU&JiananAlvin
 >
 > Ref: https://github.com/diegoceccarelli/treepy
+
