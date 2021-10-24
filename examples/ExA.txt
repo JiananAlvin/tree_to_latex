@@ -1,0 +1,4 @@
+1. all x (P(x) toRight Q(x)):T nextLine 2.all x P(x):T nextLine 3. all x Q(x):F
+all F on 3;4. Q(c_0):F 
+all T on 2; 5. P(c_o):T
+;6.P(c_0):F| all T on 1;7.Q(c_0):T

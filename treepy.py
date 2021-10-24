@@ -121,8 +121,8 @@ class Tree:
 
     def replace(self, str):
         result = str
-        dic = {"toRight": "\\rightarrow", "toLeft": "\leftarrow",
-               "double": "\leftrightarrow", "or": "\\vee", "and": "\\wedge ",
+        dic = {"toRight": "\\rightarrow", "toLeft": "\leftarrow","or": "\\vee", "all":"\\forall","exits":"\exists",
+               "double": "\\leftrightarrow", "and": "\\wedge ",
                "not": "\\neg", "sblue": "\\textcolor{blue}{", "eblue": "}",
                "sred": "\\textcolor{red}{", "ered": "}", "cross": "\\times", "circle": "\\bigcirc",
                "smag": "\\textcolor{magenta}{", "emag": "}", "space": "\ ", "nextLine": "$\\\\$", "$$": " "}
