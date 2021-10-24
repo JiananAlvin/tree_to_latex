@@ -1,0 +1,37 @@
+\node[punkt] {$\textcolor{red}{ 1 } \  \forall x \  (P(x) \vee Q(x)):T $\\$ \textcolor{red}{ 2 } \  (\forall x \  P(x)) \vee (\forall x \  Q(x)):F$}
+	child {node[punkt] {$\textcolor{red}{ 3 } \   \forall x \  P(x):F $\\$ \textcolor{red}{4} \  \forall x \  Q(x):F$}
+	child {node[punkt] {$\textcolor{red}{5} \  P(c_0):F$}
+	child {node[punkt] {$\textcolor{red}{6} \  Q(c_1):F$}
+	child {node[punkt] {$\textcolor{red}{7} \  P(x) \vee Q(x):T$}
+	child {node[punkt] {$\textcolor{red}{8} \  P(c_0) \vee Q(c_0):T$}
+	child {node[punkt] {$\textcolor{red}{9} \  P(c_1) \vee Q(c_1):T$}
+	child {node[punkt] {$\textcolor{red}{10} \  P(x):T$}
+	child {node[punkt] {$\textcolor{red}{12} \  P(c_0):T $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{}$}}
+	child {node[punkt] {$\textcolor{red}{13} \  Q(c0):T$}
+	child {node[punkt] {$\textcolor{red}{14} \  P(c_1):T $\\$ \bigcirc$}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{}$}}
+	child {node[punkt] {$\textcolor{red}{15} Q(c_1):T $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\vee T \  on \  9}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\vee T \  on \  8}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{}$}}
+	child {node[punkt] {$\textcolor{red}{11} \  Q(x):T$}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\vee T \  on \  7}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall T \  on \  1}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall T \  on \  1}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall T \  on \  1}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall F \   on \  4}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall F \   on \  3}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\vee F \   on \  2}$}};

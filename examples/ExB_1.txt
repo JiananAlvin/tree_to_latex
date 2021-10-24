@@ -1,0 +1,4 @@
+sred 1 ered space all x space (P(x) toRight Q(x)):T nextLine sred 2 ered space all x space P(x):T nextLine sred 3 ered space all x space Q(x):F
+all F space  on space 3; sred 4 ered space  Q(c_0):F 
+all T space on space 2; sred 5 ered space P(c_o):T
+;sred 6 ered spaceP(c_0):F nextLine wrong | all T space on space 1;sred 7 ered spaceQ(c_0):T nextLine wrong

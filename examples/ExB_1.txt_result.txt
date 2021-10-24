@@ -1,0 +1,13 @@
+\node[punkt] {$\textcolor{red}{ 1 } \  \forall x \  (P(x) \rightarrow Q(x)):T $\\$ \textcolor{red}{ 2 } \  \forall x \  P(x):T $\\$ \textcolor{red}{ 3 } \  \forall x \  Q(x):F$}
+	child {node[punkt] {$\textcolor{red}{ 4 } \   Q(c_0):F$}
+	child {node[punkt] {$\textcolor{red}{ 5 } \  P(c_o):T$}
+	child {node[punkt] {$\textcolor{red}{ 6 } \ P(c_0):F $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{}$}}
+	child {node[punkt] {$\textcolor{red}{ 7 } \ Q(c_0):T $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall T \  on \  1}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall T \  on \  2}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall F \   on \  3}$}};

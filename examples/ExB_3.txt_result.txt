@@ -1,0 +1,13 @@
+\node[punkt] {$\textcolor{red}{1} \  \exists x \forall y \   P(x,y):T $\\$ \textcolor{red}{2} \  \exists y \forall x \   P(x,y) : F$}
+	child {node[punkt] {$\textcolor{red}{3} \  \forall y \   P(c_0,y):T$}
+	child {node[punkt] {$\textcolor{red}{4} \  \exists x \   P(x,c_1):F$}
+	child {node[punkt] {$\textcolor{red}{5} \  P(c_0,c_1):T$}
+	child {node[punkt] {$\textcolor{red}{6} P(c_0,c_1):F $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\exists F \   on \  4}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall T \  on \  3}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall F \  on \  2}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\exists \  T \  on 1}$}};

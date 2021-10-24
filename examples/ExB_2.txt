@@ -1,0 +1,10 @@
+sred 1 ered space all x space (P(x) or Q(x)):T nextLine sred 2 ered space (all x space P(x)) or (all x space Q(x)):F
+or F space  on space 2; sred 3 ered space  all x space P(x):F nextLine sred4ered space all x space Q(x):F
+all F space  on space 3; sred5ered space P(c_0):F
+all F space  on space 4; sred6ered space Q(c_1):F
+all T space on space 1; sred7ered space P(x) or Q(x):T
+all T space on space 1; sred8ered space P(c_0) or Q(c_0):T
+all T space on space 1; sred9ered space P(c_1) or Q(c_1):T
+;sred10ered space P(x):T | or T space on space 7; sred11ered space Q(x):T
+;sred12ered space P(c_0):T nextLine wrong | or T space on space 8;sred13ered space Q(c0):T
+@| ; sred14ered space P(c_1):T nextLine correct| or T space on space 9; sred15ered Q(c_1):T nextLine wrong

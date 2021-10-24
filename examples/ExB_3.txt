@@ -1,0 +1,5 @@
+sred1ered space exists x all y space  P(x,y):T nextLine sred2ered space exists y all x space  P(x,y) : F
+exists space T space on 1; sred3ered space all y space  P(c_0,y):T
+all F space on space 2; sred4ered space exists x space  P(x,c_1):F
+all T space on space 3; sred5ered space P(c_0,c_1):T
+exists F space  on space 4 ; sred6ered P(c_0,c_1):F nextLine wrong

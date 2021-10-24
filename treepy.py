@@ -92,7 +92,7 @@ class Tree:
                         try:
                             (edge_label, node_label) = d.split(";")
                         except:
-                            print ( sys.stderr, "Error: reading line " + str(j) + " elem " + d + "(" + str(
+                            print(sys.stderr, "Error: reading line " + str(j) + " elem " + d + "(" + str(
                                 len(d.strip())) + ")")
                             sys.exit()
                         node_ids[j].append(self.addNode(s, edge_label.strip(), node_label.strip()))
@@ -112,7 +112,7 @@ class Tree:
             lab = lab.strip()
             if count % 2 == 0:
                 rev = lab  # [::-1]
-                tex += "edge from parent\n node[kant,right,pos=.4]{$" + rev + "$}}"
+                tex += "edge from parent\n node[kant,right,pos=.4]{$spink" + rev + "}$}}"
         # else:
         #	lab = lab.replace("$","\$")
         #	tex+= "edge from parent\n node[kant,below,pos=.4]{\\texttt{"+lab+"}}}"
@@ -121,11 +121,12 @@ class Tree:
 
     def replace(self, str):
         result = str
-        dic = {"toRight": "\\rightarrow", "toLeft": "\leftarrow","or": "\\vee", "all":"\\forall","exits":"\exists",
+        dic = {"toRight": "\\rightarrow", "toLeft": "\leftarrow" ,"correct":"\\bigcirc", "or": "\\vee", "all": "\\forall", "exists": "\exists",
                "double": "\\leftrightarrow", "and": "\\wedge ",
                "not": "\\neg", "sblue": "\\textcolor{blue}{", "eblue": "}",
                "sred": "\\textcolor{red}{", "ered": "}", "cross": "\\times", "circle": "\\bigcirc",
-               "smag": "\\textcolor{magenta}{", "emag": "}", "space": "\ ", "nextLine": "$\\\\$", "$$": " "}
+               "spink": "\\textcolor{magenta}{", "epink": "}", "space": "\ ", "nextLine": "$\\\\$", "$$": " "
+               ,"wrong":"\\times"}
         for i in dic:
             result = result.replace(i, dic.get(i))
             # print("replace  " + i)
