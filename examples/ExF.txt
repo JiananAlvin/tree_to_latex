@@ -1,0 +1,4 @@
+sred 1 ered space all x (not B(x,x) toRight B(b,x)):F
+all F space on space 1; sred 2 ered space not B(c0,c0) toRight B(b,c0):F
+toRight F space on space 2; sred 3 ered not B(c0,c0):T nextLine B(b,c0):F
+not T space on space 3; sred 5 ered B(c0,c0):F nextLine circle

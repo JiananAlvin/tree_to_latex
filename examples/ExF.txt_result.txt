@@ -1,0 +1,10 @@
+\node[punkt] {$\textcolor{red}{ 1 } \  \forall x (\neg B(x,x) \rightarrow B(b,x)):F$}
+	child {node[punkt] {$\textcolor{red}{ 2 } \  \neg B(c0,c0) \rightarrow B(b,c0):F$}
+	child {node[punkt] {$\textcolor{red}{ 3 } \neg B(c0,c0):T $\\$ B(b,c0):F$}
+	child {node[punkt] {$\textcolor{red}{ 5 } B(c0,c0):F $\\$ \bigcirc$}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\neg T \  on \  3}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\rightarrow F \  on \  2}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall F \  on \  1}$}};

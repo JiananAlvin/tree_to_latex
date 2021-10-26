@@ -1,0 +1,5 @@
+sred 1 ered space not all x (not B(x,x) double B(b,x)):F
+not F space on space 1; sred 2 ered space all x (not B(x,x) double B(b,x)):T
+all T space on space 2; sred 3 ered space not B(b,b) double B(b,b):T
+;sred 4 ered space not B(b,b):T nextLine sred 5 ered space B(b,b):T | double T space on space 3; sred 6 ered space not B(b,b):F nextLine sred 7 ered space B(b,b):F
+not T space on space 4; sred 8 ered space B(b,b):F nextLine cross @ not F space on space 6; sred 9 ered space B(b,b):T nextLine cross 

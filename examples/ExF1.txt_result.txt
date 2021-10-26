@@ -1,0 +1,19 @@
+\node[punkt] {$\textcolor{red}{ 1 } \  \neg \forall x (\neg B(x,x) \leftrightarrow B(b,x)):F$}
+	child {node[punkt] {$\textcolor{red}{ 2 } \  \forall x (\neg B(x,x) \leftrightarrow B(b,x)):T$}
+	child {node[punkt] {$\textcolor{red}{ 3 } \  \neg B(b,b) \leftrightarrow B(b,b):T$}
+	child {node[punkt] {$\textcolor{red}{ 4 } \  \neg B(b,b):T $\\$ \textcolor{red}{ 5 } \  B(b,b):T$}
+	child {node[punkt] {$\textcolor{red}{ 8 } \  B(b,b):F $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\neg T \  on \  4}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{}$}}
+	child {node[punkt] {$\textcolor{red}{ 6 } \  \neg B(b,b):F $\\$ \textcolor{red}{ 7 } \  B(b,b):F$}
+	child {node[punkt] {$\textcolor{red}{ 9 } \  B(b,b):T $\\$ \times$}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\neg F \  on \  6}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\leftrightarrow T \  on \  3}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall T \  on \  2}$}}
+edge from parent
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\neg F \  on \  1}$}};

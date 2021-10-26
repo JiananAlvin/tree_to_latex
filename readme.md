@@ -137,7 +137,7 @@ The tree is drawn using the [tikz package](http://www.texample.net/tikz/). You w
 
 
 
-> @ Author : WenjieDTU&JiananAlvin
+> @ Author: WenjieDTU&JiananAlvin
 >
 > Ref: https://github.com/diegoceccarelli/treepy
 
