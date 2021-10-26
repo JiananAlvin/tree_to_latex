@@ -121,12 +121,22 @@ class Tree:
 
     def replace(self, str):
         result = str
-        dic = {"toRight": "\\rightarrow", "toLeft": "\leftarrow" ,"correct":"\\bigcirc", "or": "\\vee", "all": "\\forall", "exists": "\exists",
-               "double": "\\leftrightarrow", "and": "\\wedge ",
-               "not": "\\neg", "sblue": "\\textcolor{blue}{", "eblue": "}",
-               "sred": "\\textcolor{red}{", "ered": "}", "cross": "\\times", "circle": "\\bigcirc",
-               "spink": "\\textcolor{magenta}{", "epink": "}", "space": "\ ", "nextLine": "$\\\\$", "$$": " "
-               ,"wrong":"\\times"}
+        dic = {"toRight": "\\rightarrow",
+               "toLeft": "\\leftarrow",
+               "double": "\\leftrightarrow",
+               "or": "\\vee",
+               "and": "\\wedge ",
+               "not": "\\neg",
+               "all": "\\forall",
+               "exists": "\\exists",
+               "cross": "\\times",
+               "circle": "\\bigcirc",
+               "sblue": "\\textcolor{blue}{", "eblue": "}",
+               "sred": "\\textcolor{red}{", "ered": "}",
+               "spink": "\\textcolor{magenta}{", "epink": "}",
+               "space": "\\ ",
+               "nextLine": "$\\\\$",
+               "$$": " "}
         for i in dic:
             result = result.replace(i, dic.get(i))
             # print("replace  " + i)

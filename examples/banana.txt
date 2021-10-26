@@ -1,3 +1,3 @@
-1.(p toRight r) and (q toRight not r):T largeSpace 2.(p toLeft r) or (q double not r):F
-;3.p toRight r:T | sblue not  T space on space 1 eblue;4.q toRight p:T
-@ ;sred 5. p toRight r :T ered| not  T space on space 1;6.q toRight p:T
+sred 1 ered space all x (H(x) toRight T(x)):T nextLine sred 2 ered space sblue H(m):T eblue nextLine sred 3 ered space sblue T(m):F eblue
+all T space on space 1 ; sred 4 ered space H(m) toRight T(m):T
+; sred 5 ered space sblue H(m):F eblue nextLine cross | toRight T space on space 4 ; sred 6 ered space sblue T(m):T eblue nextLine cross

@@ -1,13 +1,10 @@
-\node[punkt] {$1.(p \rightarrow r)  \wedge  (q \rightarrow \neg r):T \quad 2.(p \leftarrow r)  \vee (q \leftrightarrow \neg r):F$}
-	child {node[punkt] {$3.p \rightarrow r:T$}
+\node[punkt] {$\textcolor{red}{ 1 } \  \forall x (H(x) \rightarrow T(x)):T $\\$ \textcolor{red}{ 2 } \  \textcolor{blue}{ H(m):T } $\\$ \textcolor{red}{ 3 } \  \textcolor{blue}{ T(m):F }$}
+	child {node[punkt] {$\textcolor{red}{ 4 } \  H(m) \rightarrow T(m):T$}
+	child {node[punkt] {$\textcolor{red}{ 5 } \  \textcolor{blue}{ H(m):F } $\\$ \times$}
 edge from parent
- node[kant,above,pos=.4]{ }}
-	child {node[punkt] {$4.q \rightarrow p:T$}
-	child {node[punkt] {$\textcolor{red}{ 5. p \rightarrow r :T }$}
+ node[kant,right,pos=.4]{$\textcolor{magenta}{}$}}
+	child {node[punkt] {$\textcolor{red}{ 6 } \  \textcolor{blue}{ T(m):T } $\\$ \times$}
 edge from parent
- node[kant,above,pos=.4]{ }}
-	child {node[punkt] {$6.q \rightarrow p:T$}
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\rightarrow T \  on \  4}$}}
 edge from parent
- node[kant,above,pos=.4]{$\neg  T \  on \  1$}}
-edge from parent
- node[kant,above,pos=.4]{$\textcolor{blue}{ \neg  T \  on \  1 }$}};
+ node[kant,right,pos=.4]{$\textcolor{magenta}{\forall T \  on \  1}$}};
