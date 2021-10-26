@@ -77,7 +77,7 @@ all T space on space 1 ; sred 4 ered space H(m) toRight T(m):T
 
 The generated graph:
 
-![image-20211026222651445](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20211026222651445.png)
+![image-20211026225356097](https://raw.githubusercontent.com/JiananAlvin/ImageBed/master/202110262253136.png)
 
 ## How to run this script ##
 
