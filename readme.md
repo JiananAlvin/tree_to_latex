@@ -146,6 +146,7 @@ bottom color=white, draw=white, very thick }
 
 %end here
 ```
+> The special symbols '|' and ';' have not been supported. They are the reserved key words used for dividing keywords.
 
 The tree is drawn using the [tikz package](http://www.texample.net/tikz/). You will have to import the package *tikz*. As you can see the preamble of tikzpicture allows you to personalize your tree .
 
